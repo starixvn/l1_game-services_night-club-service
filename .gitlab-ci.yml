@@ -1,0 +1,4 @@
+include:
+  - project: "ci/repos-ci/pentagon_l1_vietnamese_heroes_service"
+    ref: master
+    file: "gitlab-ci.yml"
