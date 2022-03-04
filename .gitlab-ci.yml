@@ -1,4 +1,4 @@
 include:
-  - project: "ci/repos-ci/pentagon_l1_vietnamese_heroes_service"
+  - project: "ci/repos-ci/pentagon_l1_night_club_service"
     ref: master
     file: "gitlab-ci.yml"

@@ -1,0 +1,15 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [ "config:base" ],
+    "prHourlyLimit": 0,
+    "prConcurrentLimit": 0,
+    "baseBranches": [ "devel" ],
+    "enabledManagers": [ "npm", "docker-compose", "dockerfile", "gitlabci", "composer" ],
+    "packageRules": [
+      { "updateTypes": ["major"], "addLabels": ["SemVer Major"] },
+      { "updateTypes": ["minor"], "addLabels": ["SemVer Minor"] },
+      { "updateTypes": ["patch", "digest", "bump"], "addLabels": ["SemVer Patch"] },
+      { "languages": ["php"], "addLabels": ["Lang PHP"] },
+      { "languages": ["js"], "addLabels": ["Lang JS"] }
+    ]
+  }
