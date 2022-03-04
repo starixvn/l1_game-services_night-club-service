@@ -3,7 +3,7 @@
     "extends": [ "config:base" ],
     "prHourlyLimit": 0,
     "prConcurrentLimit": 0,
-    "baseBranches": [ "devel" ],
+    "baseBranches": [ "master" ],
     "enabledManagers": [ "npm", "docker-compose", "dockerfile", "gitlabci", "composer" ],
     "packageRules": [
       { "updateTypes": ["major"], "addLabels": ["SemVer Major"] },
