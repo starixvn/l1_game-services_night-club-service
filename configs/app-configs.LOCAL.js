@@ -58,6 +58,6 @@ export default {
         "https://games.lumigame.com",
         "https://admin.lumigame.com",
     ],
-    freeSpinLiveSeconds: 86400, // 1 day
+    freeSpinLiveSeconds: 600, // 1 day
     bonusLiveSeconds: 127,
 };
