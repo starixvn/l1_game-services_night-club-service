@@ -42,7 +42,7 @@ export default {
         },
     },
     sentry: {
-        sentryUrl: "http://52368c4019044019885440599c180bda@10.99.99.187:800/24",
+        sentryUrl: "http://52368c4019044019885440599c180bda@10.2.190.51:9009/24",
         logIdentifier: "night-club",
         env: "UAT",
     },
@@ -53,5 +53,5 @@ export default {
     enableCorsWs: true,
     corsUrls: ["http://uat.sabagame.com", "https://uat.sabagame.com", "http://uat-adm.sabagame.com", "https://uat-adm.sabagame.com"],
     freeSpinLiveSeconds: 86400, // 1 day
-    bonusLiveSeconds: 127,
+    bonusLiveSeconds: 126,
 };

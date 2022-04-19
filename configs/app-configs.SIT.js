@@ -41,7 +41,7 @@ export default {
         },
     },
     sentry: {
-        sentryUrl: "http://52368c4019044019885440599c180bda@10.99.99.187:800/24",
+        sentryUrl: "http://52368c4019044019885440599c180bda@10.2.190.51:9009/24",
         logIdentifier: "night-club",
         env: "SIT",
     },
@@ -58,6 +58,6 @@ export default {
         "http://sit-adm.sabagame.com",
         "https://sit-adm.sabagame.com",
     ],
-    freeSpinLiveSeconds: 86400, // 1 day
-    bonusLiveSeconds: 127,
+    freeSpinLiveSeconds: 600, // 1 day
+    bonusLiveSeconds: 126,
 };
