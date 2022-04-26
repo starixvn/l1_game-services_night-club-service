@@ -8267,10 +8267,10 @@ sc-semantic-release@^1.1.0:
   resolved "http://npm.lumigame.com/sc-semantic-release/-/sc-semantic-release-1.2.0.tgz#52ea7bd1aa4d5c41315a16c2c4e4f0437befdbcb"
   integrity sha512-izZqZiS8hL05cGzYbcR3+GZ1Oktr9rU1nIL05S9mZnEBm5nZfqzRkSpR2OHVJARjYsMI5dps0oUX1HjFV9x47w==
 
-sc-slot-game-base@1.2.3-beta.2:
-  version "1.2.3-beta.2"
-  resolved "http://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-1.2.3-beta.2.tgz#c3779342e9fc3a789441b22e5b9046678de51298"
-  integrity sha512-iKhPBBekqxFRv+BXRMztnqRoBtYl5IHSLz0NcbTeSSlxvkUK5319FC/zddaRPzZ0UPhj1lv4U+QqQZ9KQwEG/Q==
+sc-slot-game-base@1.2.2:
+  version "1.2.2"
+  resolved "http://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-1.2.2.tgz#4ada6eb2f1c2020754f1ad6493f294acaae3a073"
+  integrity sha512-ccWG+MKYEz8eteXPbZFyScrtFXg2JIVpexd/DE8C4n3VjrdtghMTflbu022P/Q/x6/sT45nC83fh+cntRUl5Bg==
   dependencies:
     chance "^1.1.7"
     lodash "^4.17.20"
