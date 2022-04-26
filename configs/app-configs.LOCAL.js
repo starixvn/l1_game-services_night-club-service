@@ -33,7 +33,7 @@ export default {
     },
     enabledLogs: true,
     database: {
-        url: "mongodb://lmn_backend:LmnBackend@10.10.50.13:27101/?replicaSet=L1Local",
+        url: "mongodb://lmn_backend:LmnBackend@10.10.50.12:39100,10.10.50.13:39100,10.10.50.14:39100/?replicaSet=L1Local",
         options: {
             dbName: "minigame",
             useNewUrlParser: true,
@@ -58,6 +58,6 @@ export default {
         "https://games.lumigame.com",
         "https://admin.lumigame.com",
     ],
-    freeSpinLiveSeconds: 60, // 1 day
-    bonusLiveSeconds: 127,
+    freeSpinLiveSeconds: 600, // 1 day
+    bonusLiveSeconds: 126,
 };
