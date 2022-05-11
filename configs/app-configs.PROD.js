@@ -66,6 +66,6 @@ export default {
         "https://adm.sabagame.com",
     ],
     freeSpinLiveSeconds: 86400, // 1 day
-    bonusLiveSeconds: 126,
+    bonusLiveSeconds: 125,
     enableMsgpackParser: true,
 };

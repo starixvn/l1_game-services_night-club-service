@@ -53,6 +53,6 @@ export default {
     enableCorsWs: true,
     corsUrls: ["http://uat.sabagame.com", "https://uat.sabagame.com", "http://uat-adm.sabagame.com", "https://uat-adm.sabagame.com"],
     freeSpinLiveSeconds: 86400, // 1 day
-    bonusLiveSeconds: 126,
+    bonusLiveSeconds: 125,
     enableMsgpackParser: true,
 };
