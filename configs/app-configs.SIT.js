@@ -59,5 +59,5 @@ export default {
         "https://sit-adm.sabagame.com",
     ],
     freeSpinLiveSeconds: 600, // 1 day
-    bonusLiveSeconds: 126,
+    bonusLiveSeconds: 123,
 };
