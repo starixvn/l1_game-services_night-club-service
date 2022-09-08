@@ -2,8 +2,8 @@ export default {
     hostingPort: 5000,
     apiSettings: {
         enabledApi: true,
-        apiUrl: "http://l1_game_api_sit:5000",
-        authUrl: "http://l1_auth_api_sit:5000",
+        apiUrl: "http://l2_game_api_sit:5000",
+        authUrl: "http://l2_auth_api_sit:5000",
         client: {
             id: "game-server",
             secret: "gameserver@20luminet&",
@@ -23,7 +23,7 @@ export default {
     },
     enabledLogs: true,
     database: {
-        url: "mongodb://lmn_backend:LmnBackend%40517@10.99.99.187:27301/?replicaSet=SabaSIT",
+        url: "mongodb://lmn_backend:LmnBackend%40517@10.99.99.187:37301/?replicaSet=SabaL2SIT",
         options: {
             dbName: "minigame",
             useNewUrlParser: true,
@@ -31,12 +31,12 @@ export default {
         },
     },
     sentry: {
-        sentryUrl: "http://52368c4019044019885440599c180bda@10.2.190.51:9009/24",
+        sentryUrl: "http://8ac47fca6d3e4a41908896a64ef201ac@10.2.190.51:9009/53",
         logIdentifier: "night-club",
         env: "SIT",
     },
     authenticateSettings: {
-        url: "http://l1_auth_api_sit:5000",
+        url: "http://l2_auth_api_sit:5000",
         id: "game-services",
         secret: "gameservices@20luminet&",
         requestTimeout: 10000,
@@ -44,17 +44,24 @@ export default {
         audiences: ["api", "admin-api"],
     },
     userServiceSettings: {
-        url: "http://l1_user_service_sit:5000",
+        url: "http://l2_user_service_sit:5000",
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
     enableCorsWs: true,
     corsUrls: [
-        "http://localhost:7456",
-        "http://sit.sabagame.com",
-        "https://sit.sabagame.com",
-        "https://sit-admg.sabagame.com",
-        "http://sit-adm.sabagame.com",
-        "https://sit-adm.sabagame.com",
+        "http://sit.v-gaming.net",
+        "https://sit.v-gaming.net",
+        "https://sit-admg.v-gaming.net",
+        "http://sitadm.v-gaming.net",
+        "https://sitadm.v-gaming.net",
+        "http://msit.v-gaming.net",
+        "https://msit.v-gaming.net",
+        "https://l2sit.sgamesuat.com",
+        "http://l2sit.sgamesuat.com",
+        "http://l2sitadm.sgamesuat.com",
+        "https://l2sitadm.sgamesuat.com",
+        "http://l2sitm.sgamesuat.com",
+        "https://l2sitm.sgamesuat.com",
     ],
     freeSpinLiveSeconds: 600, // 1 day
     bonusLiveSeconds: 123,
