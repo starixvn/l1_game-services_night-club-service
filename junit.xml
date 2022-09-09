@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="2" failures="0" errors="0" time="10.382">
+  <testsuite name="User place bet" errors="0" failures="0" skipped="0" timestamp="2022-09-09T08:03:21" time="7.883" tests="1">
+    <testcase classname="User place bet when game enabled should return endBet info" name="User place bet when game enabled should return endBet info" time="0.163">
+    </testcase>
+  </testsuite>
+  <testsuite name="event signin" errors="0" failures="0" skipped="0" timestamp="2022-09-09T08:03:29" time="2.061" tests="1">
+    <testcase classname="event signin should receive signed in response" name="event signin should receive signed in response" time="0.056">
+    </testcase>
+  </testsuite>
+</testsuites>
