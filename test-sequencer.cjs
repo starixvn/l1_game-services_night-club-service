@@ -1,6 +1,6 @@
 const Sequencer = require("@jest/test-sequencer").default;
 
-const runOrders = ["place-bet-successfully", "place-bet-failed"];
+const runOrders = ["sign-in", "place-bet"];
 
 class CustomSequencer extends Sequencer {
     sort(tests) {
