@@ -27,7 +27,10 @@
         "indent": 4
     },
     "dependencies": {
-        "sc-slot-game-base": "1.5.1"
+        "sc-slot-game-base": "1.6.0"
+    },
+    "resolutions": {
+        "sc-game-base": "3.3.0"
     },
     "devDependencies": {
         "@types/jest": "^26.0.24",
