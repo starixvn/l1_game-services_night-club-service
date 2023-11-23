@@ -1,7 +1,6 @@
-import ServiceContainerRegistry from "../../src/service-container-registry";
-import * as Slot from "sc-slot-game-base";
 import { InjectionMode } from "awilix";
-import { FameModel, FreespinModel, RoundModel } from "../../src/models";
+import * as Slot from "sc-slot-game-base";
+import ServiceContainerRegistry from "../../src/service-container-registry";
 
 jest.mock(
     "awilix",

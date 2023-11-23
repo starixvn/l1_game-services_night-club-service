@@ -1,10 +1,10 @@
 import awilix from "awilix";
-import * as Slot from "sc-slot-game-base";
+import { SlotContainerRegistry } from "sc-slot-game-base";
 import { FameModel, FreespinModel, RoundModel } from "./models";
 
 const { asValue } = awilix;
 
-export default class ServiceContainerRegistry extends Slot.SlotContainerRegistry {
+export default class ServiceContainerRegistry extends SlotContainerRegistry {
     registerModels() {
         super.registerModels();
 
