@@ -1,6 +1,7 @@
+import "regenerator-runtime/runtime";
 import { GameClientDriver, normalUser } from "sc-game-service-integration-utils";
-import { socketOptions } from "./stubs/test-data";
 import { initUserSession } from "./helpers";
+import { socketOptions } from "./stubs/test-data";
 
 describe("event signin", () => {
     let normalUserClientDriver;
@@ -12,11 +13,9 @@ describe("event signin", () => {
         normalUserClientDriver.close();
     });
 
-    it("should receive signed in response", (done) => {
+    it("should receive signed in response", async () => {
         // Assert
-        normalUserClientDriver.handleSignedInEvent(() => {
-            expect(true).toBe(true);
-            done();
-        });
+        await normalUserClientDriver.handleSignedInEvent();
+        expect(true).toBe(true);
     });
 });

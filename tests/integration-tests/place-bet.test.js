@@ -1,6 +1,7 @@
+import "regenerator-runtime/runtime";
 import { GameClientDriver, normalUser } from "sc-game-service-integration-utils";
-import { socketOptions } from "./stubs/test-data";
 import { initUserSession } from "./helpers";
+import { socketOptions } from "./stubs/test-data";
 
 const JEST_ASSERT_WAITING_RESPONSE_TIMEOUT = 80000;
 
@@ -21,29 +22,19 @@ describe("User place bet", () => {
     });
 
     describe("when game enabled", () => {
-        it("should return endBet info", (done) => {
-            // Arrange
-            const expectedEndBet = 600;
-
+        it("should return endBet info", async () => {
             // Act
-            normalUserClientDriver.handleSignedInEvent(() => {
-                normalUserClientDriver.sendInGameEvent();
-                normalUserClientDriver.handleInGameEvent(() => {
-                    normalUserClientDriver.emit("bet", {
-                        betChoice: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24],
-                        amount: 0.1,
-                        freeSpin: false,
-                    });
-                });
+            await normalUserClientDriver.handleSignedInEvent();
+            normalUserClientDriver.sendInGameEvent();
+            normalUserClientDriver.emit("bet", {
+                betChoice: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24],
+                amount: 0.1,
+                freeSpin: false,
             });
 
             // Assert
-            normalUserClientDriver.handleEndBetEvent((endBetData) => {
-                if (endBetData?.endBet) {
-                    expect(endBetData.endBet).toBeGreaterThan(0);
-                    done();
-                }
-            });
+            const result = await normalUserClientDriver.handleGameEvent((endBetData) => endBetData.endBet);
+            expect(result.endBet).toBeGreaterThan(0);
         });
     });
 });
